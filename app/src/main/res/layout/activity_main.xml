@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Seoul stay"
+        android:textSize="25sp"
+        android:layout_margin="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginVertical="150sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <TextView
+            android:layout_margin="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/UserNameInput"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginVertical="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="250sp"
+            />
+        <TextView
+            android:layout_marginTop="85sp"
+            android:layout_marginLeft="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/UserPasswordInput"
+            android:inputType="textPassword"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginVertical="90sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="250sp"
+            />
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_margin="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:text="Iniciar sesion"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
